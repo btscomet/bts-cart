@@ -2,6 +2,7 @@
 
 namespace Btscomet\BtsCart\Controllers;
 
+require __DIR__.'/../../vendor/autoload.php';
 class BaseController
 {
     private $keyApi;

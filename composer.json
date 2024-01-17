@@ -4,6 +4,7 @@
     "type": "library",
     "version": "0.1",
     "license": "MIT",
+    "minimum-stability":"stable",
     "autoload": {
         "psr-4": {
             "Btscomet\\BtsCart\\": "src/"
@@ -15,5 +16,7 @@
             "email": "contacto@btscomet.com"
         }
     ],
-    "require": {}
+    "require": {
+        "btscomet/bts-cart": "stable"
+    }
 }
