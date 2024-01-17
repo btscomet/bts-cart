@@ -1,0 +1,19 @@
+{
+    "name": "btscomet/bts-cart",
+    "description": "PHP Client Library for PAYCOMET Bankstore",
+    "type": "library",
+    "version": "0.1",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Btscomet\\BtsCart\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BTSCOMET",
+            "email": "contacto@btscomet.com"
+        }
+    ],
+    "require": {}
+}
