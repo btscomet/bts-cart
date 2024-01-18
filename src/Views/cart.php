@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS Cart</title>
+    <title>BTS-CART</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -49,31 +49,26 @@
 </head>
 <body>
 
-<button id="btn-flotante" class="btn btn-primary animate__infinite	infinite animate__animated animate__heartBeat" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+<button id="btn-flotante"
+        class="btn btn-primary animate__infinite infinite animate__animated animate__heartBeat"
+        type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
     <i class="fa-solid fa-cart-shopping"></i>
 </button>
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+<div class="offcanvas offcanvas-end"
+     data-bs-scroll="true"
+     tabindex="-1"
+     id="offcanvasWithBothOptions"
+     aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
-            <button type="button" class="btn btn-primary position-relative">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    99+
-                </span>
-            </button>
-        </h5>
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cart</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-
-
         <?php include("./carousel.php") ?>
-
     </div>
 </div>
-
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
