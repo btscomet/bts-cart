@@ -2,7 +2,7 @@
     "name": "btscomet/bts-cart",
     "description": "PHP Client Library for BTSCOMET CART",
     "type": "library",
-    "version": "dev-master",
+    "version": "dev-main",
     "minimum-stability": "dev",
     "license": "MIT",
     "autoload": {
