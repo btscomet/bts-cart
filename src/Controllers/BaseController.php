@@ -3,23 +3,29 @@
 namespace Btscomet\BtsCart\Controllers;
 
 require __DIR__.'/../../vendor/autoload.php';
+
+use GuzzleHttp\Client;
+
 class BaseController
 {
-    private $keyApi;
 
-    private $endpointUrl = "https://api.btscomet.com";
+    protected mixed $clientId;
+    protected mixed $clientToken;
+    protected string $endpointUrl = "https://local-admin.btscomet.com/api/v01/shopping";
+    protected $client;
 
-    public function __construct($keyApi)
+    public function __construct(array $config = [])
     {
-        $this->keyApi = $keyApi;
+        $this->clientId     = (isset($config['client_id'])) ? $config['client_id'] : null;
+        $this->clientToken  = (isset($config['client_token'])) ? $config['client_token'] : null;
     }
 
-    /**
-     * @return array
-     */
-    public function products()
+    public function config(): Client
     {
-        return [];
+        return $this->client = new Client([
+            'base_uri' => $this->endpointUrl,
+            'headers' => 'Bearer: '. base64_encode($this->clientId.':'.$this->clientToken)
+        ]);
     }
 
 }
