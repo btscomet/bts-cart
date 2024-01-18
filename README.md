@@ -1,4 +1,4 @@
-# API de PAYCOMET BankStore PHP
+# API de BTSCOMET CART
 
 Este es un API de conexión con todos los servicios de BTSCOMET para obtener un listado de productos por categoría.
 

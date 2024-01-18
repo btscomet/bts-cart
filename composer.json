@@ -1,6 +1,6 @@
 {
     "name": "btscomet/bts-cart",
-    "description": "PHP Client Library for PAYCOMET Bankstore",
+    "description": "PHP Client Library for BTSCOMET CART",
     "type": "library",
     "version": "dev-master",
     "minimum-stability": "dev",
