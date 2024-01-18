@@ -3,6 +3,7 @@
     "description": "PHP Client Library for PAYCOMET Bankstore",
     "type": "library",
     "version": "dev-master",
+    "minimum-stability": "dev",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -16,6 +17,6 @@
         }
     ],
     "require": {
-        "btscomet/bts-cart": "dev-master"
+        "php": "8.2"
     }
 }
