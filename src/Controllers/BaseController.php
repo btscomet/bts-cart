@@ -11,7 +11,7 @@ class BaseController
 
     protected mixed $clientId;
     protected mixed $clientToken;
-    protected string $endpointUrl = "https://local-admin.btscomet.com/api/v01/shopping";
+    protected string $endpointUrl = "";
     protected $client;
 
     public function __construct(array $config = [])
